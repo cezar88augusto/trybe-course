@@ -1,2 +1,4 @@
 !/usr/bin bash
-Eu sou tryber!
+
+Eu torço pro Galão da Massa!
+
