@@ -104,4 +104,29 @@ for (let i = 1; i <= meioLinha; i++) {
 
 }
 
+// Faça um programa que diz se um número definido numa variável é primo ou não.
+//Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
+//Dica: você vai precisar de fazer um loop que vá de 0 ao número definido; 
+//Além disso, vai precisar de fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+
+
+let numero = 5;
+let contador = 0;
+
+for (let i = 1; i <= numero ; i++) {
+    if (numero%i==0) {
+        contador+=1;
+    }
+    
+}
+
+
+if (contador > 2) {
+    console.log("Não é primo.")
+}else if (numero == 2 || numero ==3 || contador <= 2){
+    console.log("É primo!")
+}
+
+
+
 
