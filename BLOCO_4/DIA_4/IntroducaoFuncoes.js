@@ -19,6 +19,3 @@ function frear(decremento){
     return "Desacelerando para " + aceleracao + "m/s"
 }
 
-ligarDesligar();
-
-
