@@ -6,14 +6,15 @@ let singer = {
     bornInfo: { city: "Worksop", country: "England"}
 }
 
+//Adicionando propriedades fora do escopo.
+
+singer.height = 1.75;
+singer.apelidos = ["Apelido1", "Apelido2", "Aelido3"];
 
 console.log("O canto " + singer.name + ' ' + singer.lastName + " possui " + singer.age + " anos.");
 
 //Declaração de propriedades para objetos
 singer["fullName"] = singer.name + ' ' + singer.lastName;
-
-console.table(singer);
-
 
 console.log("O cantor " + singer.fullName + " nasceu na cidade " + singer.bornInfo.city)
 
@@ -39,3 +40,4 @@ for (let i in cores) {
 for (let i in cores) {
    console.log(cores[i])
 }
+
