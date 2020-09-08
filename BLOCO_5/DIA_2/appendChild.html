@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Título qualquer</h1>
+    </header>
+    <section>
+        <h2>Segundo título qualquer</h2>
+        <ul class="list1"></ul>
+
+    </section>
+    <section>
+        <h2>Terceiro título qualquer</h2>
+        <ol class="list2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+    </section>
+    <script>
+
+        let itensDaLista = [
+            'Item - Primeiro',
+            'Item - Segundo',
+            'Item - Terceiro',
+            'Item - Quarto',
+            'Item - Quinto',
+        ];
+
+        let recuperandoAlista = document.querySelector('.list1');
+
+        for (let i = 0; i < itensDaLista.length; i++) {
+            
+            let item = itensDaLista[i];
+
+            let criarElementoDaLista = document.createElement("li"); //Criar um elemento Li para cada item da lista
+
+
+            criarElementoDaLista.innerText = item;
+            criarElementoDaLista.className ="item-list"; // Adicionado uma classe para cada elemento da lista.
+
+            recuperandoAlista.appendChild(criarElementoDaLista);
+            
+        }
+
+        //Remover um elemento específico:
+
+        let itemList = document.querySelectorAll(".item-list");
+
+        for (let i = 0; i < itemList.length; i++) {
+            let item = itemList[i]
+            
+            if (item.innerText.includes('Terceiro')) {
+                recuperandoAlista.removeChild(item);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
