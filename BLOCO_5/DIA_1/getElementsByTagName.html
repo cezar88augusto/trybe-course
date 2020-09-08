@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lenda {
+            border: 1px solid black;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .piloto-atual {
+            border: 5px solid red;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="lenda">"Ayrton Senna</p>
+    <p class="piloto-atual">Lewis Hamilton</p>
+    <p class="piloto-atual">Sebastian Vettle</p>
+    <script>
+        //Ajuda a selecionar todos os elementos de uma classe. Mesmo se uma classe tiver apenas uma tag, deve-se utilizar a classe.
+
+        let pilotoDaF1 = document.getElementsByTagName("p");
+
+        for (let i = 0; i < pilotoDaF1.length; i++) {
+            pilotoDaF1[i].innerHTML = "Cézar";
+        }
+
+    </script>
+</body>
+
+</html>
