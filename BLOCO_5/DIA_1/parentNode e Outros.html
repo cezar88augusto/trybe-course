@@ -1,0 +1,79 @@
+<!-- A propriedade parentNode acessa o elemento pai do elemento sobre o qual a propriedade é chamada. 
+Mas ela não é a única forma de, a partir de um elemento, navegar para outros.
+Há, ao todo, as seguintes propriedades:
+parentNode: retorna o elemento pai.
+childNodes: retorna um array com todos os elementos filhos
+firstChild: retorna o primeiro filho
+lastChild: retorna o último filho
+nextSibling: retorna o próximo nó.
+previousSibling: retorna o nó anterior.
+nextElementSibling: retorna o próximo elemento.
+previousElementSibling: retorna o elemento anterior. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"></div>
+            <div id="elementoOndeVoceEsta">
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"></div>
+            <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+    <div id="umaDiv">
+
+    </div>
+    <script>
+        let variavel = document.querySelector('#elementoOndeVoceEsta');
+
+        let variavel2 = document.querySelector("#umaDiv");
+
+
+        //Acesse o elemento elementoOndeVoceEsta.
+
+        variavel.parentNode;
+
+        //Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+
+        variavel.parentNode.style.backgroundColor = "blue";
+
+        //Acesse o primeiroFilhoDoFilho e adicione um texto a ele.Você se lembra dos vídeos da aula anterior, como fazer isso ?
+
+        variavel.firstElementChild;
+        variavel.firstElementChild.innerText = "Adicione um texto";
+
+        //Acesse o primeiroFilho a partir de pai.
+
+        variavel.parentNode.firstElementChild;
+
+        //Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+
+        variavel.firstElementChild;
+
+        //Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+
+
+        //Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+
+        variavel.nextElementSibling;
+
+        //Agora acesse o terceiroFilho a partir de pai.
+
+        variavel.parentElement.childNodes[5];
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lenda {
+            border: 1px solid black;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .piloto-atual {
+            border: 5px solid red;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="piloto-com-titulo">
+        <p class="lenda">"Ayrton Senna</p>
+        <p class="piloto-atual">Lewis Hamilton</p>
+        <p class="piloto-atual">Sebastian Vettel</p>
+    </div>
+    <div class="piloto-sem-titulo">
+        <p class="piloto-atual">Daniel Riccardo</p>
+        <p class="piloto-atual">Norris</p>
+    </div>
+
+    <script>
+        //Query Selector - Retona apenas um elemento
+        //Precisa colocar o identificador: " . # "
+
+        //Query Selector All - Retorna uma lista.
+
+        let change = document.querySelectorAll(".piloto-com-titulo .piloto-atual");
+
+        for (let i = 0; i < change.length; i++) {
+
+            change[i].innerHTML = "X";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+        .paragraph {
+            border: 5px solid black;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="paragraph">"Primeiro parágrafo</p>
+    <p class="paragraph">Segundo parágrafo</p>
+    <script>
+        //Ajuda a selecionar todos os elementos de uma classe. Mesmo se uma classe tiver apenas uma tag, deve-se utilizar a classe.
+
+        let change = document.getElementsByClassName("paragraph");
+
+        change[0].innerHTML = "Cézar";
+        change[1].innerHTML = "Luísa";
+
+        let change2 = document.getElementsByTagName("p");
+
+        change2[0].innerHTML = "X";
+        change2[1].innerHTML = "Y";
+        
+    </script>
+</body>
+
+</html>
