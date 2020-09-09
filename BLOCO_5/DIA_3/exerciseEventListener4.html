@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" id="img">
+    <!-- Add a script tag at the bottom of the page, where you'll put all your code. -->
+    <script>
+        //Create a variable to store a reference to the img.
+
+        let image = document.getElementById("img");
+
+        //Change the style of the img to have a "left" of "0px", so that it starts at the left hand of the screens.
+
+        image.style.left = "0px";
+
+        //Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, 
+        //by changing the "left" style property.
+
+        //Bonus #1: When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). 
+        //So they should keep walking from left to right across the screen, forever and ever.
+
+        //Bonus #2: When the cat reaches the right-hand of the screen, make them move backwards instead. 
+        //They should keep walking back and forth forever and ever.
+
+        function catWalk() {
+            image.style.left = (parseInt(image.style.left) + 10) + "px";
+
+            if (parseInt(image.style.left) > (window.innerWidth - image.width)) {
+                image.style.right = "0px";
+            }
+        }
+
+        //Call that function every 50 milliseconds.Your cat should now be moving across the screen from left to right.Hurrah!
+
+        window.setInterval(catWalk, 10);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
