@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4 id="title">Meu Botão</h4>
+    <button id="btn">Clique pra mostar um alert</button>
+    <button id="btn2">Clique exclui o título</button>
+
+    <script>
+        var botao = document.getElementById("btn");
+
+        botao.addEventListener('click', function () {
+            alert("Você clicou!")
+        })
+
+
+        var botao2 = document.getElementById("btn2");
+        var title = document.getElementById("title")
+
+        botao2.addEventListener('click', function () {
+            title.remove();
+        })
+
+    </script>
+</body>
+
+</html>
