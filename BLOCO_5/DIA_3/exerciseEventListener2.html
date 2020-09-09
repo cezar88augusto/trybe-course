@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Square this number:
+        <input type="number" id="square-input" size="2">
+    </label>
+    <button id="square-button" onclick="calcQuadrado()">Calculate</button>
+    <br><br>
+
+    <label>Half this number:
+        <input type="number" id="half-input" size="2">
+    </label>
+    <button id="half-button" onclick="calcMetade()">Calculate</button>
+    <br><br>
+
+    <div id="solution"></div>
+
+    <script>
+
+        let resposta = document.getElementById("solution");
+
+        function calcQuadrado() {
+            let quadrado = document.getElementById("square-input").value;
+            resposta.innerHTML = "O quadrado de " + quadrado + " é " + Math.pow(quadrado, 2);
+        }
+
+        function calcMetade(num) {
+            var half = num / 2;
+            return "<br> Metade de " + num + " é " + half;;
+        }
+
+        let halfButton = document.getElementById("half-button");
+
+        halfButton.addEventListener("click", function () {
+            var num = document.getElementById("half-input").value;
+            document.getElementById("solution").innerHTML += calcMetade(num);
+        });
+    </script>
+
+</body>
+
+</html>
