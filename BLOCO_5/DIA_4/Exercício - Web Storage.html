@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <p id="texto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at sem faucibus mi fermentum ullamcorper. Proin et
+        ornare diam. Praesent nec dolor ac ante sollicitudin vulputate. Donec facilisis luctus mollis. Proin sit amet
+        nulla
+        sed orci interdum eleifend. Aenean consequat magna augue, ut mattis leo eleifend non. Morbi posuere dolor
+        vestibulum
+        hendrerit rhoncus. Nam ac sodales mauris, vitae sagittis libero. Vivamus gravida mauris eu felis dignissim, sed
+        ultricies risus mollis. Vestibulum vel convallis lorem. Sed eu augue ante.
+    </p>
+    <section>
+        <label for="">Trocar a cor de fundo:</label>
+        <input type="text" id="cor">
+        <button onclick="trocarCorDeFundo()">Trocar</button>
+    </section>
+    <section>
+        <label for="">Trocar cor do texto</label>
+        <input type="text" id="corTexto">
+        <button onclick="trocarCorDoTexto()">Trocar</button>
+    </section>
+    <section>
+        <label for="">Tamanho da Fonte</label>
+        <input type="number" id="tamanho">
+    </section>
+
+    <script>
+
+        const corpo = document.getElementsByTagName("body")[0];
+        const paragrafo = document.getElementById("texto")
+
+        function trocarCorDeFundo() {
+            const color = document.getElementById("cor").value;
+            corpo.style.backgroundColor = color
+            localStorage.setItem('backgroundColor', color);
+        }
+
+        function trocarCorDoTexto() {
+            const nameColorText = document.getElementById("corTexto").value;
+            paragrafo.style.color = nameColorText;
+            localStorage.setItem('colorText', nameColorText)
+         
+        }
+
+        paragrafo.style.color = localStorage.colorText;
+        corpo.style.backgroundColor = localStorage.backgroundColor;
+
+        //LOCAL STORAGE: MANTÉM OS DADOS
+
+        //Parametro: Chave | Valor
+        //localStorage.setItem("NOME", "Cézar");
+
+        //Remover: passar o parametro;
+        //localStorage.removeItem("NOME");
+
+        //Deletar a propriedade:
+        // delete localStorage.Cézar
+
+        //localStorage.setItem("NOME1", "X1");
+        //localStorage.setItem("NOME2", "X2");
+        //localStorage.setItem("NOME3", "X3");
+        //localStorage.setItem("NOME4", "X4");
+        //localStorage.setItem("NOME5", "X5");
+
+        //Apagar todas as chaves:
+        //localStorage.clear();
+
+        //Mostar um item:
+        //var vnome = localStorage.getItem("NOME");
+
+        //SESSION STORAGE: NÃO MANTÉM OS DADOS
+
+        //sessionStorage.setItem("NOME6", "X6");
+        //sessionStorage.setItem("NOME7", "X7");
+        //sessionStorage.setItem("NOME8", "X8");
+        //sessionStorage.setItem("NOME9", "X9");
+        //sessionStorage.setItem("NOME10", "X10");
+
+        //Acessar por posição
+        //localStorage.key(0);
+
+        //console.log(localStorage.key(0));
+
+    </script>
+</body>
+
+</html>
