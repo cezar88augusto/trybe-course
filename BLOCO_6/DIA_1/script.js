@@ -39,6 +39,9 @@ let inputs = document.getElementsByTagName("input");
 let nome = "";
 let email = "";
 let cpf = "";
+let texto ="";
+let cargo = "";
+let dataX = "";
 
 //Nome:
 inputs[0].addEventListener('keyup', function (evt) {
@@ -71,6 +74,24 @@ inputs[2].addEventListener('keyup', function (evt) {
     }
 })
 
+//Cargo:
+let funcao = document.getElementsByName("cargo")[0];
+
+funcao.addEventListener('keyup', function (evt) {
+    if (funcao.value.length > 30) {
+        evt.preventDefault();
+        alert("Máximo de caracteres: 30")
+    } else {
+        cargo = funcao.value;
+    }
+})
+
+//Data:
+inputs[7].addEventListener('click', function () {
+    dataX = inputs[7].value;
+})
+
+
 //Tipo de Casa:
 
 let type = document.getElementsByName("residencia");
@@ -84,16 +105,28 @@ type[1].addEventListener("click", function () {
     typeRisidence = "Apartamento";
 })
 
-//Consolidado
+//Currículo
+
+let textArea = document.getElementById("curriculo");
+
+textArea.addEventListener('keyup', function(){
+    texto = textArea.value;
+})
+
+//Adicionar Consolidado
 let dados = document.getElementsByClassName("consolidado")[0];
 let send = document.getElementById("send");
 
 send.addEventListener("click", function () {
     let nomeElement = document.createElement("div");
-    nomeElement.innerText = "Nome: " + nome
-        + "\n Email:" + email
-        + "\n Cpf:" + cpf
-        + "\n Tipo de Residência: " + typeRisidence;
+    nomeElement.innerText = 
+             "Nome: " + nome
+        + "\n Email: " + email
+        + "\n Cpf: " + cpf
+        + "\n Tipo de Residência: " + typeRisidence
+        + "\n Cargo: " + cargo
+        + "\n Currículo: " + texto
+        + "\n Data: " + dataX
     dados.appendChild(nomeElement);
 })
 
