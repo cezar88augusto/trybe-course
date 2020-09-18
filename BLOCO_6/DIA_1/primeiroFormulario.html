@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Como possui um campo upload de arquivos, deve-se adicionar um campo forms e o atributo enctype
+    <form action="" enctype="multipart/form-data" method="post">
+        <div>
+            <label for="">Nome</label>
+            <input type="text" name="nome" type="required" placeholder="Digite seu nome:">
+        </div>
+
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" name="email" type="required" placeholder="Digite seu e-mail:">
+        </div>
+
+        <div>
+            <label for="">Selecione sua cidade: </label>
+            <select required="required" name="cidade" id="">
+                <option selected="select" value="">Selecione</option>
+                <option value="1">Belo Horizonte</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Rio de Janeiro</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Sua foto </label>
+            <input required="required" type="file">
+        </div>
+        <div>
+            <p>Selecione seu sexo:</p>
+            <label for=""><input name="sexo" id="sexo1" type="radio" value="m">Masculino</label>
+            <label for=""><input name="sexo" id="sexo2" type="radio" value="f">Feminino</label>
+        </div>
+        <div>
+            <label for="">Biografia </label>
+            <textarea name="biografia" placeholder="Digite sua biografia" required="required" id="" cols="30"
+                rows="5"></textarea>
+        </div>
+        <div>
+            <label for="">Senha</label>
+            <input type="password" required="required" name="senha" placeholder="Digite sua senha: ">
+        </div>
+        <div>
+            <label for="noticias">
+                <input type="checkbox" id="noticias" name="newsletter">
+                Deseja receber e-mails promocionais? </label>
+        </div>
+        <button name="botao" type="submit" value="1">Enviar</button>
+
+    </form>
+</body>
+
+</html>
