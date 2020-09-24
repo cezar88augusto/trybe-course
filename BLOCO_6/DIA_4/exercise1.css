@@ -1,0 +1,54 @@
+body {
+  padding: 0px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  padding: 10px;
+}
+
+@media screen and (min-width: 794px) {
+  body {
+    background: rgba(0, 0, 255, 0.2);
+    margin: 25px 6%;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  figure {
+    display: flex;
+    margin-right: 4.5%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    background: rgba(0, 255, 0, 0.2);
+    margin: 25px 10%;
+    max-width: 1130px;
+  }
+
+  figure {
+    display: flex;
+    margin-right: 4.5%;
+    flex-direction: column;
+  }
+}
