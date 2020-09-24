@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: rgba(0, 255, 0, 0.2);
+    text-align: center;
+  }
+
+  header p {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: 30px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 20px;
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: pink;
+    text-align: center;
+  }
+
+  .container-aside {
+    display: flex;
+    justify-content: center;
+  }
+
+  header p {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 20px;
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: lightblue;
+    text-align: center;
+  }
+
+  .container-aside {
+    display: flex;
+    justify-content: center;
+  }
+
+  header p {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 20px;
+    color: blue;
+  }
+}
