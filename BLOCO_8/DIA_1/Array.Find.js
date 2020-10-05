@@ -14,3 +14,19 @@ console.log(firstMultipleOf5);
 const firstMultipleOf5 = numbers.find(number => number % 5 === 0);
 
 console.log(firstMultipleOf5);
+
+//---------------
+//Outro exemplo:
+
+const users = [
+    { name: 'Cézar', isDriver: true },
+    { name: 'MC', isDriver: false },
+    { name: 'Luísa', isDriver: true },
+    { name: 'x', isDriver: false },
+];
+
+const resp = users.find((user) => {
+    return user.isDriver === false;
+})
+
+console.log(resp);
