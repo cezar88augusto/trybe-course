@@ -11,6 +11,7 @@ for (let i = 0; i < numbers.length; i += 1) {
 console.log(firstMultipleOf5);
 
 //COM FIND
+//ENCOTRA O PRIMEIRO ELEMENTO!
 const firstMultipleOf5 = numbers.find(number => number % 5 === 0);
 
 console.log(firstMultipleOf5);
