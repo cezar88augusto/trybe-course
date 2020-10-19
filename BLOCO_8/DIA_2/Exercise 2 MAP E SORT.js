@@ -103,4 +103,6 @@ function nameAndAge() {
     )).sort(function (a, b) { return a.age - b.age });
 }
 
-assert.deepEqual(nameAndAge(), expected_result);
+console.log(nameAndAge());
+
+//assert.deepEqual(nameAndAge(), expected_result);

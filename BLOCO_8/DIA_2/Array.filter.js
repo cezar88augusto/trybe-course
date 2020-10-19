@@ -7,11 +7,11 @@ const enviarEmail = (pessoaAprovada) => {
 
 const listaDePessoasAprovadas = [
     { nome: 'A', email: 'a@a.com', nota: 51 },
-    { nome: 'B', email: 'b@b.com', nota: 101 },
-    { nome: 'C', email: 'c@c.com', nota: 158 },
+    { nome: 'B', email: 'b@b.com', nota: 50 },
+    { nome: 'C', email: 'c@c.com', nota: 0 },
     { nome: 'D', email: 'd@d.com', nota: 0 },
-    { nome: 'E', email: 'e@e.com', nota: 50 },
-    { nome: 'F', email: 'f@f.com', nota: 150 },
+    { nome: 'E', email: 'e@e.com', nota: 0 },
+    { nome: 'F', email: 'f@f.com', nota: 0 },
 ];
 
 //A variável pessoasFiltradas receberá o resultado do filtro.

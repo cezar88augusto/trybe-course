@@ -8,6 +8,7 @@ let fourthNumber = Math.ceil(Math.random() * 60);
 let fifthNumber = Math.ceil(Math.random() * 60);
 let sixthNumber = Math.ceil(Math.random() * 60);
 
+
 numerosDaMegaSena = [firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber];
 
 let acertos = 0;
