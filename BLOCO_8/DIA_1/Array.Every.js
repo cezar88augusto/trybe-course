@@ -1,6 +1,6 @@
 const notes = {
     portugues: 'Aprovado',
-    matematica: 'Reprovado',
+    matematica: 'Aprovado',
     ingles: 'Aprovado',
 };
 
