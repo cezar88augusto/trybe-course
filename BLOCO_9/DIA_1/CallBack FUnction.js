@@ -1,5 +1,5 @@
 //Fonte: https://medium.com/totvsdevelopers/entendendo-fun%C3%A7%C3%B5es-callback-em-javascript-7b500dc7fa22
-
+//Fonte2: https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
 //Exemplo:
 
 let salarioBruto = 3000;
@@ -22,6 +22,7 @@ function getSalario(salarioBruto, callback) {
     return callback(liquido);
 }
 
+
 //Exercício 1:
 
 //No código abaixo você tem a função getUser, que retorna uma pessoa qualquer. 
@@ -31,19 +32,19 @@ const assert = require('assert');
 const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
 const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
 
-const getUser = () => {
+const getUser = callback => {
     const userToReturn = {
         firstName: "Ivan",
         lastName: "Ivanovich",
         nationality: "Russian"
     };
 
-    return userNationality(userToReturn);
+    return callback(userToReturn);
 
 };
 
-//assert.equal(getUser(), "Hello! My name is Ivan Ivanovich"); // complete a chamada da função de getUser
-assert.equal(getUser(), "Ivan is Russian"); // complete a chamada da função de getUser
+assert.equal(getUser(userFullName), "Hello! My name is Ivan Ivanovich"); // complete a chamada da função de getUser
+assert.equal(getUser(userNationality), "Ivan is Russian"); // complete a chamada da função de getUser
 
 //Exercício 2:
 
@@ -55,15 +56,14 @@ const userNationality = ({ firstName, nationality }) => `${firstName} is ${natio
 
 const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
 
-const getUser = () => {
+const getUser = callback => {
     setTimeout(() => {
         const user = {
             firstName: "Ivan",
             lastName: "Ivanovich",
             nationality: "Russian"
         };
-        console.log(userFullName(user));
-        console.log(userNationality(user));
+       console.log(callback(user));
     }, delay());
 };
 
