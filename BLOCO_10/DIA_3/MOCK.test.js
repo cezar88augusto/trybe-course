@@ -61,6 +61,5 @@ describe('Faça o mock da função subtrair de maneira que seja possível restau
       expect(math.subtrair).toHaveBeenCalled();
       expect(math.subtrair(40, 20)).toBe(20);
       expect(math.subtrair).toHaveBeenCalledWith(40, 20);
-
    })
 })

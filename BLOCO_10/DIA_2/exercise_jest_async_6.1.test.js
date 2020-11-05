@@ -25,6 +25,9 @@ const Animals = [
     return findAnimalByAge(age)
       .then(animal => animal);
   }
+
+  console.log(getAnimalByAge(6));
+  
   // Testes
   describe('Testando promise - findAnimalByAge', () => {
     describe('Quando existe o animal com o a idade', () => {
