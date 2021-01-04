@@ -10,8 +10,10 @@ class List extends React.Component {
                 <h1>Lista de Clientes Cadastrados</h1>
                 <section>
                     {clientList.map(client => (
-                        <div>
-                            {client.name}
+                        <div key={client.email}>
+                            <p>Nome: {client.name} </p>
+                            <p>Email: {client.email} </p>
+                            <p>Nascimento: {client.birthdate} </p>
                         </div>
                     ))}
                 </section>

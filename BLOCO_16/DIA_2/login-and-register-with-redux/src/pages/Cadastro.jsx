@@ -22,7 +22,13 @@ class Cadastro extends React.Component {
     }
 
     render() {
-        const { addClient } = this.props;
+        const { addClient, userLoggedIN } = this.props;
+        if (!userLoggedIN.loggedIn) return (
+            <div>
+                <Link to="/login"> Login </Link>
+                <p>Favor Logar no sistema.</p>
+            </div>
+        )
         return (
             <div>
                 <h1>Tela de Cadastro</h1>
@@ -59,8 +65,12 @@ class Cadastro extends React.Component {
     }
 }
 
+const mapStateToProps = (state) => ({
+    userLoggedIN: state.loginReducer,
+});
+
 const mapDispatchToProps = (dispatch) => ({
     addClient: (client) => dispatch(addClient(client))
 })
 
-export default connect(null, mapDispatchToProps)(Cadastro);
+export default connect(mapStateToProps, mapDispatchToProps)(Cadastro);
