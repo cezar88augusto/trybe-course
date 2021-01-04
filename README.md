@@ -43,7 +43,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-5: _[Projeto - Meme Generator](https://github.com/tryber/sd-07-block5-project-meme-generator/tree/cezar-meme-generator-project)_
 - [X] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-07-block5-project-pixels-art/tree/cezar-project-pixel-art)_
 - [X] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-07-block5-project-todo-list/tree/cezar-todo-list-project)_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/tryber/sd-07-project-color-guess/tree/cezar-project-color-guess)_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
@@ -83,45 +83,45 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 10-1: _Primeiros passos no Jest_
 - [X] 10-2: _Jest - Testes Assíncronos_
 - [X] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [X] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-07-project-jest-trybe/tree/cezar-project-jest-trybe)_
 
 ##### Bloco 11: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [X] 11-1: _'Hello, world!' no React!_
+- [X] 11-2: _Componentes React_
+- [X] 11-3: _[Projeto - Movie Cards Library](https://github.com/tryber/sd-07-project-movie-cards-library/tree/cezar-movie-cards-library)_
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [X] 12-1: _Components com estado_
+- [X] 12-2: _Eventos e formulários no React_
+- [X] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-07-project-movie-card-library-stateful/tree/cezar-movie-card-library-stateful)_
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [X] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [X] 13-2: _Ciclo de vida de componentes em React_
+- [X] 13-3: _React Router_
+- [X] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-07-project-movie-card-library-crud/tree/cezar-project-movie-card-library-crud)_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [X] 14-1: _Metodologias Ágeis_
+- [X] 14-2: _[Projeto - Frontend Online Store](https://github.com/tryber/sd-07-project-frontend-online-store/tree/main-group-33)_
 
 ##### Bloco 15: Testes em React
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [X] 15-1: _Testando React com a React Testing Library_
+- [X] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [X] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-07-project-react-testing-library/tree/cezar-react-testing)_
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
+- [X] 16-1: _Introdução ao Redux_
+- [X] 16-2: _React com Redux - Parte 1_
+- [X] 16-3: _React com Redux - Prática_
+- [X] 16-4: _React com Redux - Parte 2_
+- [X] 16-5: _Testes síncronos com React-Redux_
 - [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
 
 ##### Bloco 17: Projeto React
