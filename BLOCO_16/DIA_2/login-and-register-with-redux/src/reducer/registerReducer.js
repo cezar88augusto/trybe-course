@@ -1,5 +1,5 @@
-import data from '../data'
-const INITIAL_STATE =  data;
+
+const INITIAL_STATE =  [];
 
 function registerReducer(state = INITIAL_STATE, action) {
     if (action.type === "ADD_CLIENT") {
