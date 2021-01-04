@@ -25,6 +25,7 @@ class InputsList extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  add: e => dispatch(addAssignment(e))});
+  add: e => dispatch(addAssignment(e))
+});
 
 export default connect(null, mapDispatchToProps)(InputsList);
