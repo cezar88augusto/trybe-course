@@ -35,7 +35,7 @@ export function fetchDogAction() {
     try {
       // Dispatch request action here
       // \/
-      dispatch(requestDog())
+      dispatch(requestDog()) // Vai no reducer e coloca o isFetching com valor TRUE!
       const dogResponse = await fetch('https://dog.ceo/api/breeds/image/random');
       const dogJson = await dogResponse.json();
       //Atualizar o estado com o Redux, é com o DISPATCH.
