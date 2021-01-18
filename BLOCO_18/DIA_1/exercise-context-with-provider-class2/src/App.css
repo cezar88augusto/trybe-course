@@ -1,0 +1,9 @@
+.signal {
+  width: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
