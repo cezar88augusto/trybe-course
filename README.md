@@ -133,47 +133,47 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 18-1: _Context API do React_
 - [X] 18-2: _React Hooks - useState e useContext_
 - [X] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [X] 19-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-07-project-recipes-app/tree/main-group-4)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [X] 20-1: _Banco de dados SQL_
+- [X] 20-2: _Encontrando dados em um banco de dados_
+- [X] 20-3: _Filtrando dados de forma específica_
+- [X] 20-4: _Manipulando tabelas_
+- [X] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-07-mysql-all-for-one/tree/cezar-mysql-all-for-one)_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [X] 21-1: _Funções mais usadas no SQL_
+- [X] 21-2: _Descomplicando JOINs e UNIONs_
+- [X] 21-3: _Stored Routines & Subqueries_
+- [X] 21-4: _[Projeto - Vocabulary Booster](https://github.com/tryber/sd-07-mysql-vocabulary-booster/tree/cezar-mysql-vocabulary-booster)_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [X] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [X] 22-2: _Normalização, Formas Normais e Dumps_
+- [X] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [X] 22-3: _[Projeto - One For All](https://github.com/tryber/sd-07-mysql-one-for-all/tree/cezar-mysql-one-for-all)_
 
 ##### Bloco 23: Introdução - NoSQL
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [X] 23-1: _MongoDB - Introdução_
+- [X] 23-2: _Filter Operators_
+- [X] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-07-mongodb-dataflights/tree/cezar-mongodb-dataflights)_
 
 ##### Bloco 24: Updates
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [X] 24-1: _Updates Simples_
+- [X] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [X] 24-3: _Updates Complexos - Arrays - Parte 2_
 - [ ] 24-4: _[Projeto - Commerce]()_
 
 ##### Bloco 25: Aggregation Framework
