@@ -1,0 +1,55 @@
+Aplicação com Heroku
+
+npm init -y
+npm install --save express
+
+criar um index.js
+
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+
+    res.send('Vamo que vamo Trybe')
+});
+app.listen(3000, () => {
+    console.log(`Rodando na porta 3000`)
+});
+
+
+ir no arquivo PACKAGE.JSON e acrescentar dentro da chave SCRIPTS:
+"start": "node index.js"
+
+Trocar a porta fixa (normalmente 3000) por outra dinâmica (variáveis de ambiente).
+
+Colocar a seguinte linha de código no index.js:
+const PORT = process.env.PORT || 3000;
+
+Executar os seguintes comando no terminal:
+
+git init
+heroku create
+
+Ao clicar no link disponibilizado, nada vai acontecer. Pq?
+Não subimos a aplicação para o Heroku
+
+Primeiramente, criar um arquivo chamado " .gitignore " e ignorar o node_modules, colocando " node_modules/ " dentro do arquivo.
+
+Checar os remotos do heroku com:
+git remote -v
+
+Aparecerá algo como:
+heroku  https://git.heroku.com/lit-coast-73743.git (fetch)
+heroku  https://git.heroku.com/lit-coast-73743.git (push)
+
+Aparecendo a msg acima utilizar os seguintes comandos:
+git add .
+git commit -m"Iniciando com Heroku"
+
+
+Feito isto, dar um git push. ONDE?? No Heroku. 
+git push heroku master
+
+
+Para "escutar" os logs da aplicação, digitar o comando:
+heroku logs --app lit-coast-73743 -t
+
