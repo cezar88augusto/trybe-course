@@ -1,0 +1,4 @@
+npm init -y
+npm install mongodb
+npm i express body-parser
+npm i nodemon -D

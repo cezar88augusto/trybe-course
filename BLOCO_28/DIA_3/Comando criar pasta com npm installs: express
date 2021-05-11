@@ -1,0 +1,1 @@
+mkdir hello-http-methods && cd hello-http-methods && npm init -y && npm i node-fetch
