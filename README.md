@@ -189,35 +189,30 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 26-3: _NodeJS - Arquitetura_
 - [X] 26-4: _[Projeto - Crush Manager](https://github.com/tryber/sd-07-crush-manager/tree/cezar-crush-manager)_
 
-##### Bloco 27: NodeJS
+##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [X] 27-1: _Express: HTTP com Node.js_
+- [X] 27-2: _Arquitetura de Software - Introdução ao MVC_
+- [X] 27-3: _[Projeto - Store Manager](https://github.com/tryber/sd-07-store-manager/tree/cezar-store-manager)_
 
-##### Bloco 28: NodeJS
+##### Bloco 28: NodeJS: Autenticação e Upload de Arquivos
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [X] 28-1: _Arquitetura de Software - Camada de Serviço_
+- [X] 28-2: _Arquitetura web - Rest e Restful_
+- [X] 28-3: _[Projeto - Cookmaster](https://github.com/tryber/sd-07-cookmaster/tree/cezar-cookmaster-project)_
 
-##### Bloco 29: NodeJS
+##### Bloco 29: Introdução - Deploy
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [X] 30-1: _Infraestrutura - Deploy com Heroku_
+- [X] 30-2: _Deploy - Gerenciadores de Processos_
+- [X] 30-3: _[Projeto - Stranger Things: Back-End](https://github.com/tryber/sd-07-stranger-things-backend/tree/cezar-strager-things-backend)_
+- [X] 30-3: _[Projeto - Stranger Things: Front-End](https://github.com/tryber/sd-07-stranger-things-frontend/tree/cezar-front-end-stranger-things)_
 
-##### Bloco 30: Introdução - Deploy
+##### Bloco 30: Projeto
 
-- [ ] 30-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
+- [X] 31-1: _[Projeto - Trybeer](https://github.com/tryber/sd-07-trybeer/tree/main-group-10)_
 
-##### Bloco 31: Projeto
-
-- [ ] 31-1: _[Projeto - Trybeer]()_
-
-##### Bloco 32: Arquitetura de Software
+##### Bloco 31: Arquitetura de Software
 
 - [ ] 32-1: _Arquitetura - Princípios SOLID_
 - [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
@@ -225,26 +220,26 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 32-4: _Boas práticas na escrita de testes_
 - [ ] 32-3: _[Projeto - API de Blogs]()_
 
-##### Bloco 33: Sockets
+##### Bloco 32: Sockets
 
 - [ ] 30-1: _Sockets - TCP/UDP & NET_
 - [ ] 30-2: _Sockets - Socket.io_
 - [ ] 30-3: _[Projeto - Webchat]()_
 
-##### Bloco 34: Projeto
+##### Bloco 33: Projeto
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 35: IntroduÃ§Ã£o - Ciênca da Computação
+##### Bloco 34: Introdução - Ciênca da Computação
 
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
 - [ ] 35-3: _Redes de computadores, ferramentas e segurança_
 - [ ] 35-4: _[Projeto - Explorando os protocolos]()_
 
-##### Bloco 36: Python
+##### Bloco 35: Python
 
 - [ ] 35-1: _Aprendendo Python_
 - [ ] 35-2: _Testes e Exceções
