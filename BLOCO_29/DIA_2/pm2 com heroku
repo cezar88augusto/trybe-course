@@ -1,0 +1,72 @@
+Utilizando o PM2 com o HEROKU
+
+sudo npm i pm2
+
+git init
+
+heroku create
+
+git init
+
+git remote -v
+
+FAZER AS ALTERAÇÕES:
+arquivo IML: conforme o SETTING do servidor aberto no Heroku (add keys nos settings)
+alteração no package.json
+
+
+git add .
+git commit -m"uma msg"
+git push heroku master
+
+checar se a aplicação está no ar clicando no link disponibilizado.
+
+utilizar os comandos do site:
+https://app.pm2.io/
+
+___________________
+COMANDOS:
+
+Trocar o nome do processo:
+pm2 start index.js --name 
+
+Parar o processo (name ou id):
+pm2 stop index.js
+pm2 stop 0
+
+Subir outro processo dando um nome:
+pm2 start index.js --name hello-pm2
+
+Deletar algum processo que está sendo executado:
+listar os processos: pm2 list
+deletar o processo: pm2 delete 0
+
+Reiniciar processo: para o processo, deixa-o offline e sobe novamente
+pm2 restart 1
+
+Monitorar processos em tempo real:
+pm2 monit
+
+Exibição de mais detalhes do processo:
+pm2 list
+pm2 show 1
+(1 é o número do processo)
+
+_____________
+VÁRIAS INSTÂNCIAS
+Criar um arquivo: ecosystem.config.yml e colocar:
+apps:
+  - name: App
+    script: ./index.js
+    watch: true
+    exec_mode: cluster
+    instances: max
+
+(o hífen delimita as configurações)
+
+voltar para aplicação
+
+pm2 list
+pm2 start ecosystem.config.yml
+
+Será criado a aplicação com algumas instâncias.
