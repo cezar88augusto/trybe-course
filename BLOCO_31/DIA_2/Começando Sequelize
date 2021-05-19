@@ -1,0 +1,108 @@
+npm i sequelize
+npm i mysql2
+npm i --save-dev sequelize-cli
+npx sequelize-cli init
+
+
+Criar um Bando de dados:
+Ir no arquivo config.json e fazer as alterações:
+
+{
+  "development": {
+    "username": "root",
+    "password": "1234",
+    "database": "Books",  <<< NOME DO BANCO QUE SERÁ CRIADO
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "1234",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "1234",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+
+Rodar o comando:
+npx sequelize db:create
+_________________________________________________
+
+
+
+Migrations: O BD vai alterando conforme o tempo: versionamento de tabelas. 
+Existe para não ficar toda hora indo no BD alterando as tabelas.
+Sequelize cria uma migração com o nome create-stores:
+
+npx sequelize migration:generate --name create-stores
+
+Fazer as alterações CRIANDO os campos da tabela:
+
+'use strict';
+
+module.exports = {
+  up: (queryInterface, DataTypes) => {
+    return queryInterface.createTable('Books', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: DataTypes.INTEGER
+        }
+...
+
+Obs:
+método up: inserir campo, modificar algo no BD.
+método down: reverter a criação do campo.
+
+uma vez feita as alterações: 
+npx sequelize db:migrate
+
+se quiser reverter as alterações:
+npx sequelize db:migrate:undo
+_________________________________________________
+
+Seeds: ajudar a popular o banco de dados
+Rodar o comando: npx sequelize seed:generate --name stores
+Ir na pasta Seeders.
+
+Criar os dados no UP:
+queryInterface.bulkInsert("Stores,
+[
+	{ name: 'Magazine', description: "loja de eletros" },
+	{ name: 'Epa', description: "supermecardo" },
+]);
+
+down: queryInterface.bulkDelete("Stores", null, {});
+
+Rodar o seeder criado: npx sequelize db:seed:all
+Desfazer tudo: npx sequelize db:seed:undo:all
+_________________________________________________
+
+MODEL: SINGULAR, TABELA: PLURAL.
+
+_________________________________________________
+
+Ir na pasta models e no arquivo index.js.
+Este arquivo é responsável por inicializar as notas models e vincular com o sequelize as tabelas dentro do banco de dados.
+
+Cria-se um arquivo, dentro da pasta Models. Este arquivo terá a models. 
+
+_________________________________________________
+Intalase o pacote DOTENV
+
+npm i dotenv
+
+Transferir as configurações do arquivo config.js da pasta config para um  arquivo (criar o arquivo) config.js
+
+
+
+
+
