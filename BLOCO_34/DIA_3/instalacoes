@@ -1,0 +1,32 @@
+which python3 - qual ambiente está sendo utilizado?
+python3 -m venv .venv - criar o ambiente
+source .venv/bin/activate - ativar
+
+fazer um programa que quer acessar site da internet e extrair informações
+
+python3 -m pip install requests - pip é o nome do repositório onde será baixado o comando.
+
+abrir o python: python3
+colocar o comando:
+
+import requests
+
+depois:
+
+requests.get("https://www.betrybe.com/")
+
+
+colocar dentro de uma variável
+
+request = requests.get("https://www.betrybe.com/")
+
+Consegue acessar as propriedas:
+exemplo:
+
+digitar: 
+request.headers 
+request.text
+request.content
+
+Instalar biblioteca
+python3 -m pip install parsel - Jogar os dados de um site dentro do python
