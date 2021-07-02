@@ -1,0 +1,10 @@
+Criando um ambiente virtual: ambiente separado de outros - garante o isolamento
+python3 -m venv .venv
+
+Para checar o que tem dentro:
+ls -a
+
+Ativar o ambiente virtual:
+source .venv/bin/activate
+
+Isto serve para rodar outro script, nesta pasta.
